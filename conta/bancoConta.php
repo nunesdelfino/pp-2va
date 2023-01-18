@@ -70,14 +70,29 @@ function salvar_conta($conn, $dados){
     
 }
 
-function salvar_saldo($conexao, $conta)
-{
+function salvar_saldo($conexao, $conta){
     $sql = "
     UPDATE conta SET
     SALDO = '{$conta['SALDO']}'
     WHERE N_CONTA = '{$conta['N_CONTA']}'
     ";
     mysqli_query($conexao, $sql);
+}
+
+function realiza_tranferencia($conexao, $contaOrigem, $contaDestino){
+    $sqlOrigem = "
+    UPDATE conta SET
+    SALDO = '{$contaOrigem['SALDO']}'
+    WHERE N_CONTA = '{$contaOrigem['N_CONTA']}'
+    ";
+    mysqli_query($conexao, $sqlOrigem);
+    
+    $sqlDestino = "
+    UPDATE conta SET
+    SALDO = '{$contaDestino['SALDO']}'
+    WHERE N_CONTA = '{$contaDestino['N_CONTA']}'
+    ";
+    mysqli_query($conexao, $sqlDestino);
 }
 
 function buscar_conta($conn, $id){
