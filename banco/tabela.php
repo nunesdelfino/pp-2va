@@ -24,6 +24,9 @@
                         <a href="editar.php?id=<?php echo $banco['ID']; ?> ">
                             Editar
                         </a>
+                        <a href="remover.php?id=<?php echo $banco['ID']; ?> ">
+                            Remover
+                        </a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

@@ -28,7 +28,7 @@
                             Banco
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/pp/pp-2va/criar_banco.php">Ciar</a>
+                            <a class="dropdown-item" href="/pp/pp-2va/banco/criar_banco.php">Ciar</a>
                             <a class="dropdown-item" href="#">Buscar</a>
                             <a class="dropdown-item" href="#">Listar Todos</a>
                         </div>
@@ -45,7 +45,7 @@
                             Conta
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Criar</a>
+                            <a class="dropdown-item" href="/pp/pp-2va/conta/criar_conta.php"">Criar</a>
                             <a class="dropdown-item" href="#">Buscar</a>
                             <a class="dropdown-item" href="#">Listar Todas</a>
                         </div>

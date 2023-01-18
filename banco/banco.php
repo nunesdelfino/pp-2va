@@ -20,7 +20,7 @@ function buscar_bancos($conn){
 }
 
 
-function salvar($conn, $dados){
+function salvar_banco($conn, $dados){
 
     // Prepare the data
     if(isset($dados['Nome'])){
@@ -54,9 +54,14 @@ function buscar_banco($conn, $id){
     return $retorno;
 }
 
-function editar($conexao, $banco)
+function remover_banco($conn, $id){
+    $sqlRemover = "DELETE FROM banco WHERE id = {$id}";
+
+    mysqli_query($conn, $sqlRemover);
+}
+
+function editar_banco($conexao, $banco)
 {
-    var_dump($banco);
     $sql = "
     UPDATE banco SET
     NOME = '{$banco['Nome']}',

@@ -7,12 +7,14 @@
         'ENDERECO'  => ''
     );
 
-    $exibir_banco = true;
+    $exibir_banco = false;
 
     include "banco.php";
 
     if(isset($_POST['Nome']) && $_POST['Nome'] != ''){
         $dados = array();
+
+        $dados['ID'] = $_GET['id'];
 
         $dados['Nome'] = $_POST['Nome'];
         
@@ -24,10 +26,13 @@
             $dados['Endereco'] = $_POST['Endereco'];
         }
 
-        salvar($conn, $dados);
+        editar_banco($conn, $dados);
+        header('Location: criar_banco.php');
+        die();
     }
 
-    $lista_bancos = buscar_bancos($conn);
+    $banco = buscar_banco($conn, filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT));
+    $banco['N_AGENCIA'] = intval($banco['N_AGENCIA']);
 
     
 

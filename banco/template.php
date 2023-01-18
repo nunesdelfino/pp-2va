@@ -15,7 +15,7 @@
             crossorigin="anonymous">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <?php include "navbar.php"?>;
+            <?php include "../navbar.php"?>;
         </nav>
         <title>2ª VA</title>
     </head>
