@@ -19,6 +19,15 @@ function buscar_contas($conn){
     return $contas;
 }
 
+function busca_contas($conn){
+
+    $sqlBusca = "SELECT NOME, N_CONTA, SALDO, FK_BANCO_ID FROM CONTA";
+
+    $resultado = mysqli_query($conn, $sqlBusca);
+    
+    return $resultado;
+}
+
 
 function salvar_conta($conn, $dados){
 
@@ -35,19 +44,28 @@ function salvar_conta($conn, $dados){
         $endereco = $dados['Endereco'];
     }
 
-    if(isset($dados['Endereco'])){
+    if(isset($dados['CPF'])){
         $cpf = $dados['CPF'];
     }
     // Create the SQL query
-    $sql = "INSERT INTO conta (NOME, CPF, ENDERECO, FK_BANCO_ID, SALDO) VALUES ('$nome, '$cpf', '$endereco', '$n_agencia', '0')";
+    $sql = "INSERT INTO conta (NOME, CPF, ENDERECO, FK_BANCO_ID, SALDO) VALUES ('$nome', '$cpf', '$endereco', '$n_agencia', '0')";
 
-    var_dump($sql);
 
     // Execute the query
     if (!mysqli_query($conn, $sql)) {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
     
+}
+
+function salvar_saldo($conexao, $conta)
+{
+    $sql = "
+    UPDATE conta SET
+    SALDO = '{$conta['SALDO']}'
+    WHERE N_CONTA = '{$conta['N_CONTA']}'
+    ";
+    mysqli_query($conexao, $sql);
 }
 
 function buscar_conta($conn, $id){
@@ -71,9 +89,10 @@ function editar_conta($conexao, $conta)
     $sql = "
     UPDATE conta SET
     NOME = '{$conta['Nome']}',
-    N_AGENCIA = '{$conta['NAgencia']}',
+    CPF = '{$conta['CPF']}',
+    FK_BANCO_ID = '{$conta['N_Agencia']}',
     ENDERECO = '{$conta['Endereco']}'
-    WHERE id = '{$conta['ID']}'
+    WHERE N_CONTA = '{$conta['N_CONTA']}'
     ";
     mysqli_query($conexao, $sql);
 }

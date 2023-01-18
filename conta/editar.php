@@ -14,14 +14,15 @@ $conta = array(
     include "bancoConta.php";
 
     if(isset($_POST['Nome']) && $_POST['Nome'] != ''){
+
         $dados = array();
 
-        $dados['N_CONTA'] = $_GET['NConta'];
+        $dados['N_CONTA'] = $_POST['id'];
 
         $dados['Nome'] = $_POST['Nome'];
         
-        if(isset($_POST['FK_BANCO_ID']) && $_POST['FK_BANCO_ID'] != ''){
-            $dados['FK_BANCO_ID'] = filter_var($_POST['FK_BANCO_ID'], FILTER_SANITIZE_NUMBER_INT);
+        if(isset($_POST['N_Agencia']) && $_POST['N_Agencia'] != ''){
+            $dados['N_Agencia'] = filter_var($_POST['N_Agencia'], FILTER_SANITIZE_NUMBER_INT);
         }
         
         if(isset($_POST['Endereco']) && $_POST['Endereco'] != ''){
@@ -32,13 +33,14 @@ $conta = array(
             $dados['CPF'] = $_POST['CPF'];
         }
 
-        editar_banco($conn, $dados);
-        header('Location: criar_banco.php');
+        var_dump($dados);
+
+        editar_conta($conn, $dados);
+        header('Location: criar_conta.php');
         die();
     }
 
     $conta = buscar_conta($conn, filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT));
-
     
 
     include "template.php";

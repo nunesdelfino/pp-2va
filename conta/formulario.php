@@ -39,9 +39,7 @@
         <div class="col-sm-10">
             <select class="form-control" id="N_Agencia" name="N_Agencia">
                 <?php 
-            $conn = mysqli_connect('localhost', 'root', '', 'pratica');
-            $query = "SELECT ID, NOME, N_AGENCIA FROM BANCO";
-            $result = mysqli_query($conn, $query);
+            $result = busca_bancos($conn);
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<option value="'.$row['ID'].'">'.$row['NOME'].'</option>';
             }

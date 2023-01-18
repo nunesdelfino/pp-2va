@@ -19,6 +19,14 @@ function buscar_bancos($conn){
     return $bancos;
 }
 
+function busca_bancos($conn){
+    $sqlBusca = "SELECT ID, NOME, N_AGENCIA FROM BANCO";
+
+    $resultado = mysqli_query($conn, $sqlBusca);
+    
+    return $resultado;
+}
+
 
 function salvar_banco($conn, $dados){
 

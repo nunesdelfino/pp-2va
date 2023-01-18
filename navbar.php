@@ -45,8 +45,9 @@
                             Conta
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/pp/pp-2va/conta/criar_conta.php"">Criar</a>
-                            <a class="dropdown-item" href="#">Buscar</a>
+                            <a class="dropdown-item" href="/pp/pp-2va/conta/criar_conta.php">Criar</a>
+                            <a class="dropdown-item" href="/pp/pp-2va/conta/depo_saques.php">Deposito e Saques</a>
+                            <a class="dropdown-item" href="/pp/pp-2va/conta/buscar_conta.php">Buscar</a>
                             <a class="dropdown-item" href="#">Listar Todas</a>
                         </div>
                     </li>
