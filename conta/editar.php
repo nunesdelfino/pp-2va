@@ -12,6 +12,7 @@ $conta = array(
     $exibir_conta = false;
 
     include "bancoConta.php";
+    include "../banco/banco.php";
 
     if(isset($_POST['Nome']) && $_POST['Nome'] != ''){
 

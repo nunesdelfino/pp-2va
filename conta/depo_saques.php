@@ -22,14 +22,16 @@
         $aux = explode("##",$_POST['Conta']);
 
         $dados['N_CONTA'] = $aux[0];
+
+        $valor = str_replace(",",".",$_POST['Valor']);
         
         if(isset($_POST['T_Oper']) && $_POST['T_Oper'] != ''){
             
             if($_POST['T_Oper'] == 'D'){
-                $dados['SALDO'] = intval($aux[1]) + intval($_POST['Valor']);
+                $dados['SALDO'] = doubleval($aux[1]) + doubleval($valor);
             }
             if($_POST['T_Oper'] == 'S'){
-                $dados['SALDO'] = intval($aux[1]) - intval($_POST['Valor']);
+                $dados['SALDO'] = doubleval($aux[1]) - doubleval($valor);
             }
         }
 
