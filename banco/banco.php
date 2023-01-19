@@ -27,6 +27,18 @@ function busca_bancos($conn){
     return $resultado;
 }
 
+function buscar_banco_nome($conn, $nome){
+    $sqlBusca = 'SELECT * FROM banco WHERE NOME LIKE "%' . $nome. '%"';
+
+    $resultado = mysqli_query($conn, $sqlBusca);
+    $contas = array();
+
+    while ($conta = mysqli_fetch_assoc($resultado)) {
+        $contas[] = $conta;
+    }
+    return $contas;
+}
+
 
 function salvar_banco($conn, $dados){
 

@@ -11,10 +11,12 @@
 
     $exibir_conta = true;
 
-    include "bancoConta.php";
-    include "../banco/banco.php";
+    $erro = "";
 
-    if(isset($_POST['Conta']) && $_POST['Conta'] != ''){
+    include "../bancoConta.php";
+    include "../../banco/banco.php";
+
+    if(isset($_POST['Valor']) && doubleval($_POST['Valor']) > '0'){
 
         
         $dados = array();
@@ -31,14 +33,23 @@
                 $dados['SALDO'] = doubleval($aux[1]) + doubleval($valor);
             }
             if($_POST['T_Oper'] == 'S'){
-                $dados['SALDO'] = doubleval($aux[1]) - doubleval($valor);
+                if(doubleval($aux[1]) > doubleval($valor)){
+                    var_dump(doubleval($aux[1]) . " -- " . doubleval($valor));
+                    $dados['SALDO'] = doubleval($aux[1]) - doubleval($valor);
+
+                    salvar_saldo($conn, $dados);
+                    header('Location: ../criar_conta.php');
+                    die();
+                } else {
+                    $erro = "Saldo insuficiente";
+                }
             }
         }
 
-        salvar_saldo($conn, $dados);
-        header('Location: criar_conta.php');
-        die();
-
+    } else {
+        if(isset($_POST['Valor'])){
+            $erro = "O Valor não pode ser 0 ou negativo";
+        }
     }
 
     $lista_contas = buscar_contas($conn);
@@ -52,6 +63,6 @@
 
     include "temp_depo_saques.php";
 
-    
+    echo $erro;
 
 ?>

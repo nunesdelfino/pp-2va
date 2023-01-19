@@ -31,6 +31,18 @@ function buscar_conta_nome($conn, $nome){
     return $contas;
 }
 
+function buscar_conta_banco($conn, $id){
+    $sqlBusca = "SELECT * FROM conta WHERE FK_BANCO_ID = {$id}";
+
+    $resultado = mysqli_query($conn, $sqlBusca);
+    $contas = array();
+
+    while ($conta = mysqli_fetch_assoc($resultado)) {
+        $contas[] = $conta;
+    }
+    return $contas;
+}
+
 function busca_contas($conn){
 
     $sqlBusca = "SELECT NOME, N_CONTA, SALDO, FK_BANCO_ID FROM CONTA";

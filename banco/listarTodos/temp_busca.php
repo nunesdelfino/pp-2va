@@ -15,13 +15,15 @@
             crossorigin="anonymous">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <?php include "../navbar.php"?>;
+            <?php include "../../navbar.php"?>;
         </nav>
-        <title>Gerenciar Conta</title>
+        <title>Buscar Conta</title>
     </head>
     <body>
-        
-        <?php include "form_depo_saques.php"; ?>
+            
+        <?php if($exibir_conta): ?>
+            <?php include "../tabela.php"; ?>
+        <?php endif; ?>
         
 
         <!-- Optional JavaScript -->

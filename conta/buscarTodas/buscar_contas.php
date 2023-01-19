@@ -10,18 +10,13 @@
     );
 
     $exibir_conta = true;
-    $lista_contas = array();
 
-    include "bancoConta.php";
-    include "../banco/banco.php";
+    include "../bancoConta.php";
+    include "../../banco/banco.php";
 
-    if(isset($_POST['Nome']) && $_POST['Nome'] != ''){
+    $nome = "%%%";
 
-        $nome = $_POST['Nome'];
-
-        $lista_contas = buscar_conta_nome($conn, $nome);
-
-    }
+    $lista_contas = buscar_conta_nome($conn, $nome);
 
     function formata_cpf($cpf){
         $bloco1 = substr($cpf,0,3);

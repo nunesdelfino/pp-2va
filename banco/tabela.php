@@ -21,10 +21,10 @@
                     </td>
                     <td>
                         <!-- O campo com os links para editar e remover -->
-                        <a href="editar.php?id=<?php echo $banco['ID']; ?> ">
+                        <a href="/pp/pp-2va/banco/editar.php?id=<?php echo $banco['ID']; ?> ">
                             Editar
                         </a>
-                        <a href="remover.php?id=<?php echo $banco['ID']; ?> ">
+                        <a href="/pp/pp-2va/banco/remover.php?id=<?php echo $banco['ID']; ?> ">
                             Remover
                         </a>
                     </td>
