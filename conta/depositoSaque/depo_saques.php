@@ -31,6 +31,9 @@
             
             if($_POST['T_Oper'] == 'D'){
                 $dados['SALDO'] = doubleval($aux[1]) + doubleval($valor);
+                salvar_saldo($conn, $dados);
+                header('Location: ../buscarTodas/buscar_contas.php');
+                die();
             }
             if($_POST['T_Oper'] == 'S'){
                 if(doubleval($aux[1]) > doubleval($valor)){
@@ -38,7 +41,7 @@
                     $dados['SALDO'] = doubleval($aux[1]) - doubleval($valor);
 
                     salvar_saldo($conn, $dados);
-                    header('Location: ../criar_conta.php');
+                    header('Location: ../buscarTodas/buscar_contas.php');
                     die();
                 } else {
                     $erro = "Saldo insuficiente";

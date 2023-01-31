@@ -83,6 +83,7 @@ function salvar_conta($conn, $dados){
 }
 
 function salvar_saldo($conexao, $conta){
+    var_dump($conta);
     $sql = "
     UPDATE conta SET
     SALDO = '{$conta['SALDO']}'
