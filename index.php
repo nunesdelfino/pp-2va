@@ -1,28 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous">
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <?php include "navbar.php"?>;
-        </nav>
-        <title>2ª VA</title>
+        <?php include "head.php"?>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Imagens do carrossel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="assets/img/carrossel2.jpg" alt="Imagem 1" style="height: 93vh; width: 100%; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Seja Digital</h5>
+                    <p>Represente os principais bancos agora mesmo.</p>
+                    <button class="btn btn-primary"onclick="window.location.href='../pp-2va/banco/criar_banco.php'">Criar novo banco</button>
+                </div>
+                </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <div class="carousel-item">
+                <img src="assets/img/carrossel1.jpg" alt="Imagem 2" style="height: 93vh; width: 100%; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Vem ser cliente</h5>
+                    <p>Gerencie suas contas em um unico lugar</p>
+                    <button class="btn btn-primary"onclick="window.location.href='../pp-2va/conta/criar_conta.php'">Abrir uma nova conta</button>
+                </div>
+                </div>
+                
+                <div class="carousel-item">
+                <img src="assets/img/carrossel3.jpg" alt="Imagem 3" style="height: 93vh; width: 100%; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Banco Digital</h5>
+                    <p>Faça suas transações de forma online e segura.</p>
+                    <button class="btn btn-primary"onclick="window.location.href='../pp-2va/conta/transferencia/transferencia.php'">Realizar Transferência</button>
+                </div>
+            </div>
+            <!-- Controles do carrossel -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+
+
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
