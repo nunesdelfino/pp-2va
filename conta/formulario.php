@@ -1,3 +1,4 @@
+
 <form method="post">
     <input type="hidden" name="id" value="<?php echo $conta['N_CONTA']; ?> "/>
     <div class="form-group row">
@@ -9,7 +10,8 @@
                 id="Nome"
                 placeholder="Nome do Cliente"
                 name="Nome"
-                value="<?php echo $conta['NOME']; ?> ">
+                value="<?php echo $conta['NOME'];?>"
+                required>
         </div>
     </div>
     <div class="form-group row">
@@ -20,7 +22,8 @@
                 class="form-control"
                 id="CPF"
                 name="CPF"
-                value="<?php echo $conta['CPF']; ?>">
+                value="<?php echo $conta['CPF'];?>"
+                required>
         </div>
     </div>
     <div class="form-group row">
@@ -31,7 +34,8 @@
                 class="form-control"
                 id="Endereco"
                 name="Endereco"
-                value="<?php echo $conta['ENDERECO']; ?> ">
+                value="<?php echo $conta['ENDERECO'];?>"
+                required>
         </div>
     </div>
     <div class="form-group row">
@@ -50,7 +54,7 @@
 
     <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Salvar</button>
+            <button type="submit" class="btn btn-success">Salvar</button>
         </div>
     </div>
 </form>

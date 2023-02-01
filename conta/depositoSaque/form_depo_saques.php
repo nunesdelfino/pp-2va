@@ -26,16 +26,18 @@
         <label for="Valor" class="col-sm-2 col-form-label">Valor:</label>
         <div class="col-sm-10">
             <input
-                type="text"
+                type="number"
                 class="form-control"
                 id="Valor"
-                name="Valor" ">
+                name="Valor" "
+                required>
+                
         </div>
     </div>
 
     <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Efetuar Transação</button>
+            <button type="submit" class="btn btn-success">Efetuar Transação</button>
         </div>
     </div>
 </form>

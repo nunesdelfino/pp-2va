@@ -7,13 +7,14 @@
                 class="form-control"
                 id="Nome"
                 placeholder="Nome do Cliente"
-                name="Nome" ">
+                name="Nome" "
+                required>
         </div>
     </div>
 
     <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Buscar</button>
+            <button type="submit" class="btn btn-success">Buscar</button>
         </div>
     </div>
 </form>

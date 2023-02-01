@@ -35,13 +35,13 @@
                 class="form-control"
                 id="Valor"
                 name="Valor" 
-                required">
+                required>
         </div>
     </div>
 
     <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Efetuar Transação</button>
+            <button type="submit" class="btn btn-success">Efetuar Transação</button>
         </div>
     </div>
 </form>

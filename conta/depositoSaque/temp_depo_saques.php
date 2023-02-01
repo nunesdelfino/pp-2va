@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -17,12 +17,12 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <?php include "../../navbar.php"?>;
         </nav>
-        <title>Gerenciar Conta</title>
+        <title>FREEBANK</title>
     </head>
     <body>
-        
-        <?php include "form_depo_saques.php"; ?>
-        
+        <div class="container p-5">
+            <?php include "form_depo_saques.php"; ?>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

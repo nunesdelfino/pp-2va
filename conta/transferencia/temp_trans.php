@@ -20,9 +20,9 @@
         <title>Realizar Tranferencia</title>
     </head>
     <body>
-        
-        <?php include "form_trans.php"; ?>
-        
+        <div class="container p-5">
+            <?php include "form_trans.php"; ?>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

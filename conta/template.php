@@ -17,12 +17,13 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <?php include "../navbar.php"?>;
         </nav>
-        <title>Gerenciar Conta</title>
+        <title>FREEBANK</title>
     </head>
     <body>
-        
-        <?php include "formulario.php"; ?>
-            
+        <div class="container p-5">
+            <?php include "formulario.php"; ?>
+        </div>
+
         <?php if($exibir_conta): ?>
             <?php include "tabela.php"; ?>
         <?php endif; ?>

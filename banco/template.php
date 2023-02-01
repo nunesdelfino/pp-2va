@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -17,12 +17,13 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <?php include "../navbar.php"?>;
         </nav>
-        <title>2ª VA</title>
+        <title>FREEBANK</title>
     </head>
     <body>
+        <div class="container p-5">
+            <?php include "formulario.php"; ?>
+        </div>
         
-        <?php include "formulario.php"; ?>
-            
         <?php if($exibir_banco): ?>
             <?php include "tabela.php"; ?>
         <?php endif; ?>

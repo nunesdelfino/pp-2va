@@ -13,7 +13,7 @@
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Seja Digital</h5>
                     <p>Represente os principais bancos agora mesmo.</p>
-                    <button class="btn btn-primary"onclick="window.location.href='../pp-2va/banco/criar_banco.php'">Criar novo banco</button>
+                    <button class="btn btn-success"onclick="window.location.href='../pp-2va/banco/criar_banco.php'">Criar novo banco</button>
                 </div>
                 </div>
 
@@ -22,7 +22,7 @@
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Vem ser cliente</h5>
                     <p>Gerencie suas contas em um unico lugar</p>
-                    <button class="btn btn-primary"onclick="window.location.href='../pp-2va/conta/criar_conta.php'">Abrir uma nova conta</button>
+                    <button class="btn btn-success"onclick="window.location.href='../pp-2va/conta/criar_conta.php'">Abrir uma nova conta</button>
                 </div>
                 </div>
                 
@@ -31,7 +31,7 @@
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Banco Digital</h5>
                     <p>Faça suas transações de forma online e segura.</p>
-                    <button class="btn btn-primary"onclick="window.location.href='../pp-2va/conta/transferencia/transferencia.php'">Realizar Transferência</button>
+                    <button class="btn btn-success"onclick="window.location.href='../pp-2va/conta/transferencia/transferencia.php'">Realizar Transferência</button>
                 </div>
             </div>
             <!-- Controles do carrossel -->
@@ -44,8 +44,6 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
-
-
 
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

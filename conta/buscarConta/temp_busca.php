@@ -20,8 +20,9 @@
         <title>Buscar Conta</title>
     </head>
     <body>
-        
-        <?php include "form_busca.php"; ?>
+        <div class="container p-5">
+            <?php include "form_busca.php"; ?>
+        </div>
             
         <?php if($exibir_conta): ?>
             <?php include "../tabela.php"; ?>
