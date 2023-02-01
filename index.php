@@ -5,23 +5,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- Div principal do carrossel -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Imagens do carrossel -->
             <div class="carousel-inner">
+                <!-- Primeira imagem do carrossel -->
                 <div class="carousel-item active">
+                    <!-- Imagem -->
                 <img src="assets/img/carrossel2.jpg" alt="Imagem 1" style="height: 93vh; width: 100%; object-fit: cover;">
+                <!-- Descrição da imagem -->
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Seja Digital</h5>
                     <p>Represente os principais bancos agora mesmo.</p>
+                    <!-- Botão para criar um novo banco -->
                     <button class="btn btn-success"onclick="window.location.href='../pp-2va/banco/criar_banco.php'">Criar novo banco</button>
                 </div>
                 </div>
 
+<!-- Segunda imagem do carrossel -->
                 <div class="carousel-item">
+                    <!-- Imagem -->
                 <img src="assets/img/carrossel1.jpg" alt="Imagem 2" style="height: 93vh; width: 100%; object-fit: cover;">
+                <!-- Descrição da imagem -->
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Vem ser cliente</h5>
                     <p>Gerencie suas contas em um unico lugar</p>
+                    <!-- Botão para abrir uma nova conta -->
                     <button class="btn btn-success"onclick="window.location.href='../pp-2va/conta/criar_conta.php'">Abrir uma nova conta</button>
                 </div>
                 </div>
@@ -36,10 +45,12 @@
             </div>
             <!-- Controles do carrossel -->
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <!-- Ícone de seta para a esquerda -->
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <!-- Ícone de seta para a direita -->
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Próximo</span>
             </a>

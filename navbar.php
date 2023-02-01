@@ -17,6 +17,8 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/pp/pp-2va/index.php">Home</a>
                     </li>
+                    
+                    <!-- Cria um item de navegação na barra de navegação com o título "Banco" -->
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -28,6 +30,7 @@
                             aria-expanded="false">
                             Banco
                         </a>
+                        <!-- Conteúdo do dropdown associado ao item "Banco" -->
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/pp/pp-2va/banco/criar_banco.php">Criar Banco</a>
                             <a class="dropdown-item" href="/pp/pp-2va/banco/listarContas/list_contas.php">Buscar Contas</a>
@@ -35,6 +38,8 @@
                             <a class="dropdown-item" href="/pp/pp-2va/banco/listarTodos/listar_bancos.php">Listar Bancos</a>
                         </div>
                     </li>
+
+                    <!-- Cria um item de navegação na barra de navegação com o título "Conta" -->
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -46,6 +51,8 @@
                             aria-expanded="false">
                             Conta
                         </a>
+
+                         <!-- Conteúdo do dropdown associado ao item "Conta" -->
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/pp/pp-2va/conta/criar_conta.php">Criar Contas</a>
                             <a class="dropdown-item" href="/pp/pp-2va/conta/depositoSaque/depo_saques.php">Deposito e Saques</a>
@@ -54,6 +61,8 @@
                             <a class="dropdown-item" href="/pp/pp-2va/conta/buscarTodas/buscar_contas.php">Listar Todas</a>
                         </div>
                     </li>
+
+                    <!-- Cria um item de navegação na barra de navegação com o título "Sobre" -->
                     <li class="nav-item">
                         <a class="nav-link" href="/pp/pp-2va/sobre.php">Sobre
                             <span class="sr-only">(current)</span></a>
