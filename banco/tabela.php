@@ -3,7 +3,7 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Nome</th>
-                    <th scope="col">N Agência</th>
+                    <th scope="col">N. Agência</th>
                     <th scope="col">Endereço</th>
                     <th scope="col">Opções</th>
                 </tr>

@@ -2,7 +2,6 @@
 <html lang="pt-BR">
     <head>
         <?php include "head.php"?>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- Div principal do carrossel -->
@@ -12,7 +11,7 @@
                 <!-- Primeira imagem do carrossel -->
                 <div class="carousel-item active">
                     <!-- Imagem -->
-                <img src="assets/img/carrossel2.jpg" alt="Imagem 1" style="height: 93vh; width: 100%; object-fit: cover;">
+                <img class="img-carrossel" src="assets/img/carrossel2.webp" alt="Imagem 1">
                 <!-- Descrição da imagem -->
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Seja Digital</h5>
@@ -25,7 +24,7 @@
 <!-- Segunda imagem do carrossel -->
                 <div class="carousel-item">
                     <!-- Imagem -->
-                <img src="assets/img/carrossel1.jpg" alt="Imagem 2" style="height: 93vh; width: 100%; object-fit: cover;">
+                <img class="img-carrossel" src="assets/img/carrossel1.webp" alt="Imagem 2">
                 <!-- Descrição da imagem -->
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Vem ser cliente</h5>
@@ -36,7 +35,7 @@
                 </div>
                 
                 <div class="carousel-item">
-                <img src="assets/img/carrossel3.jpg" alt="Imagem 3" style="height: 93vh; width: 100%; object-fit: cover;">
+                <img class="img-carrossel" src="assets/img/carrossel3.webp" alt="Imagem 3">
                 <div class="carousel-caption d-none d-md-block">
                 <h5>Banco Digital</h5>
                     <p>Faça suas transações de forma online e segura.</p>
@@ -55,18 +54,5 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
-
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,19 +1,29 @@
+<<<<<<< Updated upstream
     <!-- Este eh um formulário para atualizar as informações do banco -->
     <form method="post">
         <!-- Este campo de entrada eh para armazenar o ID do banco -->
+=======
+<head>
+    <script src="../utils/JQuery/jquery.validate.min.js"></script>
+    <script src="../utils/JQuery/additional-methods.js"></script>
+    <script src="../utils/JQuery/localization/messages_pt_BR.min.js"></script>
+    <script src="../utils/validate.js"></script>
+</head>
+    <form id="formvalidate" method="post">
+>>>>>>> Stashed changes
         <input type="hidden" name="id" value="<?php echo $banco['ID']; ?> "/>
         <div class="form-group row">
-            <label for="Nome" class="col-sm-2 col-form-label">Nome do Banco:</label>
+            <label for="nome" class="col-sm-2 col-form-label">Nome do Banco:</label>
             <div class="col-sm-10">
             <!--Adiciona as informacoes-->
                 <input
                     type="text"
                     class="form-control"
-                    id="Nome"
-                    placeholder="Nome do banco"
-                    name="Nome"
+                    id="nome"
+                    placeholder="Digite o nome do banco"
+                    name="nome"
                     value="<?php echo $banco['NOME'];?>"
-                    required>
+                    >
             </div>
         </div>
         <div class="form-group row">
@@ -23,13 +33,13 @@
                     type="number"
                     class="form-control"
                     id="NAgencia"
+                    placeholder="Digite o numero da agencia"
                     name="NAgencia"
                     inputmode="numeric"
                     pattern="\d*"
-                    value="<?php echo $banco['N_AGENCIA'];?>"
-                    min="1"
-                    required>
+                    value="<?php echo $banco['N_AGENCIA'];?>">
             </div>
+            <script>document.getElementById("NAgencia").value = "";</script>
         </div>
         <div class="form-group row">
             <label for="Endereco" class="col-sm-2 col-form-label">Endereço:</label>
@@ -38,9 +48,10 @@
                     type="text"
                     class="form-control"
                     id="Endereco"
+                    placeholder="Digite o endereço"
                     name="Endereco"
                     value="<?php echo $banco['ENDERECO']; ?>"
-                    required>
+                    >
             </div>
         </div>
 

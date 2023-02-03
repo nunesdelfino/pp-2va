@@ -1,11 +1,11 @@
 <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">N Conta</th>
+                    <th scope="col">N. Conta</th>
                     <th scope="col">Nome</th>
                     <th scope="col">CPF</th>
                     <th scope="col">Endereço</th>
-                    <th scope="col">N Agência</th>
+                    <th scope="col">N. Agência</th>
                     <th scope="col">Saldo</th>
                     <th scope="col">Opções</th>
                 </tr>

@@ -10,7 +10,8 @@
                     class="form-control"
                     id="Nome"
                     placeholder="Nome do Banco"
-                    name="Nome" ">
+                    name="Nome" "
+                    required>
             </div>
         </div>
 

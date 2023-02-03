@@ -1,5 +1,11 @@
-
-<form method="post">
+<head>
+    <script src="../utils/JQuery/jquery.validate.min.js"></script>
+    <script src="../utils/JQuery/additional-methods.js"></script>
+    <script src="../utils/JQuery/localization/messages_pt_BR.min.js"></script>
+    <script src="../utils/JQuery/jquery.mask.min.js"></script>
+    <script src="../utils/contavalidate.js"></script>
+</head>
+<form id="validateconta" method="post">
     <input type="hidden" name="id" value="<?php echo $conta['N_CONTA']; ?> "/>
     <div class="form-group row">
         <label for="Nome" class="col-sm-2 col-form-label">Nome do Cliente:</label>
@@ -8,10 +14,10 @@
                 type="text"
                 class="form-control"
                 id="Nome"
-                placeholder="Nome do Cliente"
+                placeholder="Insira o nome do cliente"
                 name="Nome"
                 value="<?php echo $conta['NOME'];?>"
-                required>
+                >
         </div>
     </div>
     <div class="form-group row">
@@ -21,9 +27,11 @@
                 type="text"
                 class="form-control"
                 id="CPF"
+                onkeypress="$(this).mask('000.000.000-00')"
+                placeholder="000.000.000-00"
                 name="CPF"
                 value="<?php echo $conta['CPF'];?>"
-                required>
+                >
         </div>
     </div>
     <div class="form-group row">
@@ -33,9 +41,10 @@
                 type="text"
                 class="form-control"
                 id="Endereco"
+                placeholder="Insira o endereço"
                 name="Endereco"
                 value="<?php echo $conta['ENDERECO'];?>"
-                required>
+                >
         </div>
     </div>
     <div class="form-group row">
