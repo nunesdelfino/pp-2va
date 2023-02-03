@@ -16,11 +16,11 @@
 
     // Verifica se o campo "Nome" foi enviado no 
     //formulário POST e se não está vazio
-    if(isset($_POST['Nome']) && $_POST['Nome'] != ''){
+    if(isset($_POST['nome']) && $_POST['nome'] != ''){
         // Cria um array para armazenar os dados do banco
         $dados = array();
 
-        $dados['Nome'] = $_POST['Nome'];
+        $dados['nome'] = $_POST['nome'];
         
         // Verifica se o campo do numero da agencia foi enviado no 
         //formulário POST e se não está vazio
