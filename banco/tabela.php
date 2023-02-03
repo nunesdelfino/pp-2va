@@ -1,4 +1,5 @@
 <table class="table">
+      <!-- Cabeçalho da tabela com as colunas -->
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Nome</th>
@@ -8,8 +9,10 @@
                 </tr>
             </thead>
             <tbody>
+                    <!-- Loop para exibir os dados de cada banco na lista -->
                 <?php foreach ($lista_bancos as $banco) : ?>
                 <tr>
+                          <!-- Exibição dos itens do banco -->
                     <td>
                         <?php echo $banco['NOME']; ?>
                     </td>

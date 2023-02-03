@@ -17,6 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <?php include "../navbar.php"?>;
         </nav>
+            <!-- Título da página -->
         <title>Erro Remover</title>
     </head>
     <body>

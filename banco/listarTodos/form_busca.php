@@ -3,7 +3,9 @@
         <div class="form-group row">
             <label for="Nome" class="col-sm-2 col-form-label">Nome do Banco:</label>
             <div class="col-sm-10">
-                <input
+                
+             <!-- Input que define o campo de texto para o nome do banco -->    
+            <input
                     type="text"
                     class="form-control"
                     id="Nome"

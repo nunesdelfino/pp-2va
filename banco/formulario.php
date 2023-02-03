@@ -1,8 +1,11 @@
+    <!-- Este eh um formulário para atualizar as informações do banco -->
     <form method="post">
+        <!-- Este campo de entrada eh para armazenar o ID do banco -->
         <input type="hidden" name="id" value="<?php echo $banco['ID']; ?> "/>
         <div class="form-group row">
             <label for="Nome" class="col-sm-2 col-form-label">Nome do Banco:</label>
             <div class="col-sm-10">
+            <!--Adiciona as informacoes-->
                 <input
                     type="text"
                     class="form-control"
@@ -43,6 +46,7 @@
 
         <div class="form-group row">
             <div class="col-sm-10">
+                <!--Botao salvar-->
                 <button type="submit" class="btn btn-success">Salvar</button>
             </div>
         </div>
