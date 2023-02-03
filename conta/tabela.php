@@ -33,10 +33,10 @@
                     </td>
                     <td>
                         <!-- O campo com os links para editar e remover -->
-                        <a href="editar.php?id=<?php echo $conta['N_CONTA']; ?> ">
+                        <a href="/pp/pp-2va/conta/editar.php?id=<?php echo $conta['N_CONTA']; ?> ">
                             Editar
                         </a>
-                        <a href="remover.php?id=<?php echo $conta['N_CONTA']; ?> ">
+                        <a href="/pp/pp-2va/conta/remover.php?id=<?php echo $conta['N_CONTA']; ?> ">
                             Remover
                         </a>
                     </td>
