@@ -56,10 +56,12 @@ function buscar_banco_nome($conn, $nome){
 //e os dados a serem salvos ($dados)
 function salvar_banco($conn, $dados){
 
+    var_dump($dados);
+
     // Verificação se existe não estiver vazio
     // armazena o valor na variável
-    if(isset($dados['Nome'])){
-        $nome = $dados['Nome'];
+    if(isset($dados['nome'])){
+        $nome = $dados['nome'];
     }
 
     if(isset($dados['NAgencia'])){
@@ -106,7 +108,7 @@ function editar_banco($conexao, $banco)
     // Prepara a consulta SQL para atualizar as informações do banco
     $sql = "
     UPDATE banco SET
-    NOME = '{$banco['Nome']}',
+    NOME = '{$banco['nome']}',
     N_AGENCIA = '{$banco['NAgencia']}',
     ENDERECO = '{$banco['Endereco']}'
     WHERE id = '{$banco['ID']}'

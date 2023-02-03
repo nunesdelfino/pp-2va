@@ -15,7 +15,7 @@
     include "banco.php";
 
     //Verifica se a variavel não esta vazia
-    if(isset($_POST['Nome']) && $_POST['Nome'] != ''){
+    if(isset($_POST['nome']) && $_POST['nome'] != ''){
         $dados = array();
 
         // Armazena o ID que foi enviado via GET na 
@@ -24,7 +24,7 @@
 
         // Armazena o valor enviado pelo POST na variável 
         //'Nome' na posição 'Nome' do array
-        $dados['Nome'] = $_POST['Nome'];
+        $dados['nome'] = $_POST['nome'];
         
         if(isset($_POST['NAgencia']) && $_POST['NAgencia'] != ''){
         // Armazena o valor enviado pelo POST na variável 
@@ -48,6 +48,8 @@
     // Converte o número de agência de string para inteiro
     $banco['N_AGENCIA'] = intval($banco['N_AGENCIA']);
 
+
+    var_dump($banco);
     
     include "template.php";
 ?>

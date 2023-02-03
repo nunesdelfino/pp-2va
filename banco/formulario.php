@@ -35,7 +35,6 @@
                     pattern="\d*"
                     value="<?php echo $banco['N_AGENCIA'];?>">
             </div>
-            <script>document.getElementById("NAgencia").value = "";</script>
         </div>
         <div class="form-group row">
             <label for="Endereco" class="col-sm-2 col-form-label">Endereço:</label>
