@@ -7,14 +7,8 @@
                     type="text"
                     class="form-control"
                     id="Nome"
-<<<<<<< Updated upstream
                     placeholder="Nome do Banco"
                     name="Nome">
-=======
-                    placeholder="Digite o nome do banco"
-                    name="Nome" "
-                    required>
->>>>>>> Stashed changes
             </div>
         </div>
 

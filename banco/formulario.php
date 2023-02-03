@@ -1,16 +1,12 @@
-<<<<<<< Updated upstream
-    <!-- Este eh um formulário para atualizar as informações do banco -->
-    <form method="post">
-        <!-- Este campo de entrada eh para armazenar o ID do banco -->
-=======
-<head>
+ <head>
     <script src="../utils/JQuery/jquery.validate.min.js"></script>
     <script src="../utils/JQuery/additional-methods.js"></script>
     <script src="../utils/JQuery/localization/messages_pt_BR.min.js"></script>
     <script src="../utils/validate.js"></script>
 </head>
+<!-- Este eh um formulário para atualizar as informações do banco -->
+<!-- Este campo de entrada eh para armazenar o ID do banco -->
     <form id="formvalidate" method="post">
->>>>>>> Stashed changes
         <input type="hidden" name="id" value="<?php echo $banco['ID']; ?> "/>
         <div class="form-group row">
             <label for="nome" class="col-sm-2 col-form-label">Nome do Banco:</label>
